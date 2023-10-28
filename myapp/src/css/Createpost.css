@@ -1,0 +1,68 @@
+.createPost{
+    max-width: 500px;
+    margin: 10px auto;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    padding: 15px; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Add a background color transition */
+}
+.createPost:hover {
+    background-color: #f7f7f7; /* Change background color on hover */
+}
+.main-div{
+    border-top: 1px solid rgb(173,173,173);
+    padding: 15px; /* Add padding for spacing */
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Add a background color transition */
+}
+.post-header:hover {
+    background-color: #eee; /* Change background color on hover */
+}
+
+#post-btn {
+    border: none;
+    color: #9acd32;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add a color transition */
+}
+
+#post-btn:hover {
+    color: #7bae28; /* Change text color on hover */
+}
+
+.details {
+    border-top: 1px solid rgb(173, 173, 173);
+    padding: 15px; /* Add padding for spacing */
+}
+
+textarea {
+    width: 90%;
+    border: none;
+    outline: none;
+    padding-bottom: 50px; /* Add padding for spacing */
+    transition: border-color 0.3s ease; /* Add a border color transition */
+    resize: none;
+}
+
+textarea:focus {
+    border-color: #9acd32; /* Change border color when focused */
+}
+
+#output {
+    width: 300px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    padding: 10px; /* Add padding for spacing */
+    transition: border-color 0.3s ease; /* Add a border color transition */
+}
+
+#output:focus {
+    border-color: #9acd32; /* Change border color when focused */
+}

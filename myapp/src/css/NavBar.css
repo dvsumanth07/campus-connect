@@ -1,0 +1,64 @@
+img{
+    width:10%;
+    object-fit: contain;
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 5px 5px #e0dce0;
+    background-color: #fff; /* White background color */
+    height: 70px; /* Adjust the navbar height as needed */
+    border-bottom: 2px solid #9acd32;
+    
+}
+ul{
+    /* display: flex;
+    align-items: baseline; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    border-radius: 10%;
+    padding: 1px 15px;
+    margin: 0;
+    transition: background-color 0.3s ease;
+    
+}
+li:hover {
+    background-color: grey; /* Darker teal color on hover */
+}
+a{
+    /* font-size: 16px;
+    text-decoration: none;
+    color: black; */
+    font-size: 16px;
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    padding: 10px 20px; /* Add padding to improve clickability */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+/* .navLogo{
+    width: 200px;
+} */
+.primaryBtn{
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border: none;
+    color: white;
+    background: #db183c;
+    border-radius: 15px;
+    margin-left: 15px;
+    transition: all 0.25s ease;
+}
+
+.primaryBtn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px rgba(219, 24, 44, 0.6);
+}

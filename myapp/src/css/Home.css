@@ -1,0 +1,157 @@
+.card {
+  max-width: 500px;
+  height: max-content;
+  margin: 25px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: inset;
+}
+.card-header {
+  display: flex;
+}
+.card-header > h5 {
+  margin: 0;
+  padding: 11px;
+}
+.card-pic {
+  display: flex;
+}
+.card-pic img {
+  width: 30px;
+  height: 30px; /* Set a fixed height to make it a perfect circle */
+  border-radius: 50%; /* Apply a circular mask */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+  padding: 5px;
+}
+.card-image img {
+  width: 100%;
+}
+.card-content {
+  text-align: left;
+  padding: 3px 10px;
+  line-height: 4px;
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+.add-comment {
+  display: flex;
+  align-items: center;
+}
+.add-comment input {
+  margin: 0;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.comment {
+  border: none;
+  background-color: none;
+  font-weight: bolder;
+  cursor: pointer;
+  /* margin-left: 5px !important; */
+  position: relative; /* Set the position to relative */
+  left: -15px; /* Adjust the left value to move the button to the left */
+}
+/* .comment-button {
+  margin-left: 5px; /* Adjust the margin as needed */
+
+.cap {
+  display: flex;
+  align-items: baseline;
+}
+.cap > p {
+  margin-left: 5px; /* Use flexbox for layout */
+}
+.material-symbols-outlined-red {
+  color: #9acd32;
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
+}
+.material-symbols-outlined {
+  cursor: pointer;
+}
+.showComment {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 13, 13, 0.4);
+  height: 100%;
+}
+.container {
+  display: flex;
+  width: 60%;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  height: 500px;
+}
+.postPic {
+  width: 60%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.postPic img {
+  max-width: 100%; /* Set the maximum width */
+  max-height: 100%; /* Set the maximum height */
+  width: auto; /* Ensure the width adjusts proportionally */
+
+  height: auto; /* Ensure the height adjusts proportionally */
+  object-fit: contain;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.details {
+  flex-grow: 1;
+  /* width: 100%;
+  height: inherit; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align comments to the left side */
+  overflow-y: auto; /* Add vertical scroll when necessary */
+
+  /* Add a maximum height to prevent overflow */
+  max-height: calc(100% - 30px); /* Adjust as needed */
+}
+.add-comment {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure the "Add Comment" section spans the full width */
+  padding: 10px; /* Add some padding for separation */
+
+  /* Optional: Add a border-top to separate the "Add Comment" section from the comments */
+  border-top: 1px solid #ccc; /* Adjust as needed */
+}
+
+.add-comment input {
+  flex-grow: 1; /* Allow the input to expand to take up available space */
+  margin-right: 10px; /* Add some spacing between the input and the button */
+}
+.comment-section {
+  /* flex-grow: 4; */
+  text-align: left;
+  margin-left: 10px;
+  overflow-y: auto; /* Add vertical scroll when necessary */
+  flex-grow: 1; /* Allow the comments section to expand to take up available space */
+
+  /* Add a maximum height to prevent overflow */
+  max-height: calc(100% - 30px); /* Adjust as needed */
+}
+
+.close-comment {
+  position: fixed;
+  top: 1%;
+  right: 15%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.material-symbols-outlined-comment {
+  font-size: 50px;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+}
