@@ -11,6 +11,7 @@ export default function MyFavourites() {
   const [show, setShow] = useState(false);
   const notifyA = (msg) => toast.error(msg);
   const notifyB = (msg) => toast.success(msg);
+  const picLink = "https://cdn-icons-png.flaticon.com/128/9131/9131529.png";
   useEffect(() => {
     const token = localStorage.getItem("jwt");
     if (!token) {
@@ -119,7 +120,10 @@ export default function MyFavourites() {
           <div className="card">
             <div className="card-header">
               <div className="card-pic">
-                <img src="https://shorturl.at/hsIT5" alt="profile" />
+                <img
+                  src={posts.postedBy.Photo ? posts.postedBy.Photo : picLink}
+                  alt="profile"
+                />
               </div>
 
               <h5>
