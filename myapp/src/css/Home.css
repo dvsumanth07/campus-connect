@@ -29,7 +29,7 @@
 .card-content {
   text-align: left;
   padding: 3px 10px;
-  line-height: 4px;
+  line-height: 1.4 !important;
   border-bottom: 1px solid rgb(173, 173, 173);
 }
 .add-comment {
@@ -85,12 +85,14 @@
   top: 10%;
   left: 20%;
   height: 500px;
+  border-radius: 10px;
 }
 .postPic {
   width: 60%;
   background-color: black;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .postPic img {

@@ -54,7 +54,12 @@ export default function PostDetail({ item, username, toggleDetails }) {
                 removePost(item._id);
               }}
             >
-              <span className="material-symbols-outlined">delete</span>
+              <span
+                style={{ marginLeft: "100px" }}
+                className="material-symbols-outlined"
+              >
+                delete
+              </span>
             </div>
           </div>
 

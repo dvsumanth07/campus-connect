@@ -1,3 +1,37 @@
+.card {
+  max-width: 500px;
+  height: max-content;
+  margin: 25px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: inset;
+}
+.card-header {
+  display: flex;
+}
+.card-header > h5 {
+  margin: 0;
+  padding: 11px;
+}
+.card-pic {
+  display: flex;
+}
+.card-pic img {
+  width: 30px;
+  height: 30px; /* Set a fixed height to make it a perfect circle */
+  border-radius: 50%; /* Apply a circular mask */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+  padding: 5px;
+}
+.card-image img {
+  width: 100%;
+}
+.card-content {
+  text-align: left;
+  padding: 3px 10px;
+  line-height: 1.4 !important;
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
 .comment {
   border: none;
   background-color: none;
@@ -41,12 +75,14 @@
   top: 10%;
   left: 20%;
   height: 500px;
+  border-radius: 10px;
 }
 .postPic {
   width: 60%;
   background-color: black;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .postPic img {
@@ -72,11 +108,14 @@
   /* Add a maximum height to prevent overflow */
   max-height: calc(100% - 30px); /* Adjust as needed */
 }
+.details .card-content {
+  padding: 40px;
+}
 .add-comment {
   display: flex;
   align-items: center;
   width: 100%; /* Ensure the "Add Comment" section spans the full width */
-  padding: 10px; /* Add some padding for separation */
+  padding: 5px; /* Add some padding for separation */
 
   /* Optional: Add a border-top to separate the "Add Comment" section from the comments */
   border-top: 1px solid #ccc; /* Adjust as needed */

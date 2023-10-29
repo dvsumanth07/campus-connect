@@ -138,7 +138,7 @@ router.get("/myposts", requireLogin, (req, res) => {
 
 router.get("/myfollowingpost", requireLogin, (req, res) => {
   POST.find({ postedBy: { $in: req.user.following } })
-    .populate("postedBy", "_id name")
+    .populate("postedBy", "_id name Photo")
     .populate("comments.postedBy", "_id name")
     .sort("-createdAt")
     .then((posts) => res.json(posts))

@@ -27,14 +27,14 @@ export default function NavBar({ login }) {
               <span class="material-symbols-outlined">chat</span>
             </li>
           </Link>
-          <Link to="/profile">
-            <li>
-              <span class="material-symbols-outlined">person_2</span>
-            </li>
-          </Link>
           <Link to="/create">
             <li>
               <span class="material-symbols-outlined">shadow_add</span>
+            </li>
+          </Link>
+          <Link to="/profile">
+            <li>
+              <span class="material-symbols-outlined">person_2</span>
             </li>
           </Link>
 

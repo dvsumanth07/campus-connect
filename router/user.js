@@ -9,7 +9,8 @@ router.get("/user/:id", (req, res) => {
     .select("-password")
     .then((user) => {
       POST.find({ postedBy: req.params.id })
-        .populate("postedBy", "_id")
+        .populate("postedBy", "_id name Photo")
+        .populate("comments.postedBy", "_id name")
         .exec()
         .then((post) => {
           res.status(200).json({ user, post });
