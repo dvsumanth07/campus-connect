@@ -85,9 +85,7 @@ export default function Createpost() {
       </div>
       <div className="details">
         <div className="card-header">
-          <div className="card-pic">
-            <img src="https://shorturl.at/hsIT5" alt="" />
-          </div>
+          <div className="card-pic">{/* <img src= alt="" /> */}</div>
           <h4>{localStorage.getItem("name")}</h4>
         </div>
         <textarea
